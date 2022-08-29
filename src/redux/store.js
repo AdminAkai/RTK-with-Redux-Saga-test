@@ -2,9 +2,9 @@ import createSagaMiddleware from '@redux-saga/core';
 import { configureStore } from '@reduxjs/toolkit';
 
 import { catsReducer } from './features';
-import catSaga from './features/catsSlice/sagas';
+import catSaga from './features/catsSlice/saga';
 
-const saga = createSagaMiddleware()
+const sagas = createSagaMiddleware()
 
 export const store = configureStore({
   reducer: {
@@ -13,4 +13,4 @@ export const store = configureStore({
   middleware: [saga]
 })
 
-saga.run(catSaga)
+sagas.run(catSaga)
