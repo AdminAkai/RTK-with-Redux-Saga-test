@@ -42,10 +42,10 @@ function App() {
                 <h5>Temperament: { temperament }</h5>
                 <p>{ description }</p>
               </div>
-              <button>VIEW MORE CATS</button>
             </div>
           ))
         }
+        <button>VIEW MORE CATS</button>
       </div>
     </div>
   );
