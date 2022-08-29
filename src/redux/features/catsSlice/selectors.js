@@ -1,0 +1,1 @@
+export const selectAllCats = state => state.cats.cats
